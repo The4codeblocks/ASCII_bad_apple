@@ -6,7 +6,7 @@ if __name__ == '__main__':
 	frame_raw = frame_raw.replace('.', ' ')
 	f.close()
 	frames = frame_raw.split('SPLIT')
-	os.system('mplayer -vo null -vc null video.mp4 &')
+	os.system('mplayer -quiet -vo null -vc null video.mp4 &')
 	#os.system('mplayer test.mp4 &')
 	init_time = time.time()
 	while time.time() <= init_time + 218:
